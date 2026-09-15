@@ -26,18 +26,6 @@ This project was built to implement and demonstrate core Operating Systems and C
 ### 4. Metadata Index
 *   The server maintains an in-memory metadata index to avoid repeatedly scanning/querying the filesystem during normal metadata operations. The filesystem remains the source of truth and the index is rebuilt at startup.
 
-## 📈 Benchmark
-
-The repository includes a multi-threaded load-testing utility (`load_test.exe`) to measure the performance of the Thread Pool and locking architecture.
-
-**Local benchmark using 5 concurrent workers and 2,000 requests:**
-- 5 concurrent worker threads executing 100 complete cycles each (1 Cycle = UPLOAD -> DOWNLOAD -> LIST -> DELETE).
-- **Throughput:** ~4,700 requests per second.
-- **Latency:** ~1.8 ms per full 4-operation lifecycle.
-- **Success Rate:** 100%.
-
-*(Note: These metrics measure the overhead of the Thread Pool, Protocol parsing, and synchronization over the local loopback interface.)*
-
 ## ⚙️ Build Instructions
 
 **Requirements:**
