@@ -35,7 +35,7 @@ This project was built to implement and demonstrate core Operating Systems and C
 
 **Building:**
 ```bash
-git clone <repository_url>
+git clone <https://github.com/Sudeep-Sharma-22/Multi-Threaded-File-Storage-Server.git>
 cd mtfss
 mingw32-make all
 ```
